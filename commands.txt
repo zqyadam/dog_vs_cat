@@ -1,0 +1,33 @@
+ami-0a9fac70   弗吉尼亚北部
+ami-0a7e4b6f   俄亥俄
+
+
+sudo mkdir /usr/dl
+sudo mkdir /usr/dl/data
+sudo mkdir /usr/dl/models
+sudo chown -R -v ubuntu /usr/dl
+sudo chown -R -v ubuntu /usr/dl/data
+sudo chown -R -v ubuntu /usr/dl/models
+cd /usr/dl
+
+pip install kaggle
+cd /home/ubuntu/
+rm .kaggle
+sudo mkdir .kaggle
+sudo chown -R -v ubuntu .kaggle
+cp /usr/dl/kaggle.json /home/ubuntu/.kaggle/
+
+source activate tensorflow_p36
+pip install -U keras tqdm scikit-learn
+
+
+sudo mkdir /usr/dl/data/test/test
+move 
+
+
+jupyter notebook --ip=0.0.0.0
+
+
+rm -r /usr/dl/data/train3
+
+nvidia-smi
